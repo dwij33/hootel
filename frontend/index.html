@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Grand Hotel</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#booking">Book a Room</a></li>
+            <li><a href="#order">Order Food</a></li>
+        </ul>
+    </nav>
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <img src="room1.jpg" alt="Luxury Room">
+            <p>Luxury Room - Rs. 5000/night</p>
+        </div>
+        <div class="room">
+            <img src="room2.jpg" alt="Deluxe Room">
+            <p>Deluxe Room - Rs. 3000/night</p>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>Paneer Butter Masala - Rs. 250</li>
+            <li>Chicken Biryani - Rs. 300</li>
+            <li>Veg Thali - Rs. 200</li>
+        </ul>
+    </section>
+    <section id="booking">
+        <h2>Book a Room</h2>
+        <form id="booking-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <select id="room-type">
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    <section id="order">
+        <h2>Order Food</h2>
+        <form id="order-form">
+            <input type="text" id="order-name" placeholder="Your Name" required>
+            <input type="text" id="food-item" placeholder="Food Item" required>
+            <button type="submit">Order</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
